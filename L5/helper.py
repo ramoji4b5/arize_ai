@@ -14,7 +14,8 @@ def get_openai_api_key():
 
 def get_phoenix_endpoint():
     load_env()
-    phoenix_endpoint = os.getenv("PHOENIX_COLLECTOR_ENDPOINT")
+    phoenix_endpoint = os.getenv("PHOENIX_COLLECTOR_ENDPOINT") if os.getenv("PHOENIX_COLLECTOR_ENDPOINT") else "http://localhost:6006/"
+    
     return phoenix_endpoint
 
 

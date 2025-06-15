@@ -21,3 +21,4 @@ tqdm
 duckdb
 
 python-dotenv
+#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
